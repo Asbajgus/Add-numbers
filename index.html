@@ -4,12 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-</head>
-<button id="addNumber" onclick="plusOneNumber()">+1</button>
-<button id="multiplyNumber" onclick="plusTwoNumber()">+2</button>
-<button id="reset" onclick="resetNumber()">reset</button>
-<div id="number">0</div>
-<body>
+
+    
     <style>
         button{
             width: 50px;
@@ -17,6 +13,14 @@
             text-align: center;
         }
     </style>
+</head>
+
+<body>
+    <button onclick="plusOneNumber()">+1</button>
+    <button onclick="plusTwoNumber()">+2</button>
+    <button onclick="resetNumber()">reset</button>
+    <div id="number">0</div>
+    
     <script>
         let number = 0;
       function plusOneNumber(){
@@ -31,7 +35,6 @@
       function resetNumber(){
       number = 0;
       document.getElementById('number').innerHTML = number;
-
       }
 </script>
 </body>
