@@ -12,11 +12,15 @@
             text-align: center;
         }
     </style>
-    
+
 </head>
 <body>
     <button onclick="plusOneNumber()">+1</button>
     <button onclick="plusTwoNumber()">+2</button>
+    <button onclick="removeOneNumber()">-1</button>
+    <button onclick="removeTwoNumber()">-2</button>
+    <button onclick="multiplyByTwo()">X2</button>
+    <button onclick="multiplyByFour()">x4</button>
     <button onclick="resetNumber()">reset</button>
     <div id="number">0</div>
     
@@ -25,14 +29,38 @@
       function plusOneNumber(){
         number ++
         document.getElementById('number').innerHTML = number;
+        document.getElementById('number').style.fontSize = "20px";
       }
 
       function plusTwoNumber(){
         number +=2
         document.getElementById('number').innerHTML = number;
+        document.getElementById('number').style.fontSize = "40px";
+      }
+
+      function removeOneNumber(){
+        number --
+        document.getElementById('number').innerHTML = number;
+        document.getElementById('number').style.fontSize = "15px"
+      }
+
+      function removeTwoNumber(){
+        number -=2
+        document.getElementById('number').innerHTML = number;
+           document.getElementById('number').style.fontSize = "10px"
       }
       function resetNumber(){
       number = 0;
+      document.getElementById('number').innerHTML = number;
+      }
+
+      function multiplyByTwo(){
+      number *=2;
+      document.getElementById('number').innerHTML = number;
+      }
+
+      function multiplyByFour(){
+      number *=4;
       document.getElementById('number').innerHTML = number;
       }
 </script>
